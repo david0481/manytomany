@@ -25,7 +25,7 @@ class Equipe
     private $nom;
 
     /**
-     * @ORM\ManyToMany(targetEntity=Personne::class, inversedBy="equipes")
+     * @ORM\ManyToMany(targetEntity=Personne::class, mappedBy="equipes")
      */
     private $personnes;
 

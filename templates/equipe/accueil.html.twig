@@ -7,11 +7,14 @@
     <div class="row">
     <div class="col-10">
     <h1>Equipe</h1>
-
-        {{ form_start(formEquipe, {'action': path('equipe_new'), 'method': 'POST'}) }}
-        {{ form_widget(formEquipe) }}
-        <button type="submit" class="btn btn-success">Ajouter</button>
-         {{ form_end(formEquipe) }}
+        <div class="row">
+            {{ form_start(formEquipe, {'action': path('equipe_new'), 'method': 'POST'}) }}
+            <div class="col-6">
+            {{ form_widget(formEquipe) }}
+            </div>
+            <button type="submit" class="btn btn-success"><i class="fas fa-plus"></i></button>
+            {{ form_end(formEquipe) }}
+        </div>
 
     <table class="table">
         <tbody>
@@ -46,7 +49,7 @@
 
     {{ form_start(formPersonne, {'action': path('personne_new'), 'method': 'POST'}) }}
         {{ form_widget(formPersonne) }}
-        <button type="submit" class="btn btn-success">Ajouter</button>
+        <button type="submit" class="btn btn-success"><i class="fas fa-plus"></i></button>
     {{ form_end(formPersonne) }}
 
     <table class="table table-striped">

@@ -14,7 +14,9 @@ class PersonneType extends AbstractType
         $builder
             ->add('nom')
             ->add('prenom')
-            ->add('equipes', null,['choice_label'=> 'nom'])
+            ->add('equipes', null,['choice_label'=> 'nom',
+            'mapped'=>false,
+            'multiple'=>false])
         ;
     }
 
